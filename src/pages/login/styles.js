@@ -9,17 +9,27 @@ const styles = StyleSheet.create({
   },
 
   formCont: {
-    width: "50%",
+    width: "60%",
     backgroundColor: "#ffff",
-    borderRadius: 5,
+    borderRadius: 10,
+    flexDirection: "column",
+    marginBottom: "20%",
+    padding: 10,
   },
 
   formInput: {
-    height: 10,
-    //backgroundColor: "#ffff",
+    height: 30,
+    backgroundColor: "#dddd",
     margin: 10,
-    borderRadius: 40,
+    marginBottom: 3,
+    borderRadius: 12,
     color: "#000",
+    padding: 0,
+    paddingHorizontal: 10,
+  },
+
+  inputText: {
+    alignSelf: "center"
   },
 
   btn: {
@@ -33,6 +43,7 @@ const styles = StyleSheet.create({
 
   btnText: {
     textAlign: "center",
+    color: "#fff",
   },
 })
 
