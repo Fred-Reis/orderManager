@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native"
+//import EStyleSheet from 'react-native-extended-stylesheet';
 
 const styles = StyleSheet.create({
   container: {
@@ -10,6 +11,7 @@ const styles = StyleSheet.create({
 
   formCont: {
     width: "60%",
+    minHeight: "30%",
     backgroundColor: "#ffff",
     borderRadius: 10,
     flexDirection: "column",
@@ -22,19 +24,22 @@ const styles = StyleSheet.create({
     backgroundColor: "#dddd",
     margin: 10,
     marginBottom: 3,
+    marginTop: 20,
     borderRadius: 12,
     color: "#000",
     padding: 0,
     paddingHorizontal: 10,
+    //nao consegui por box shadow
   },
 
   inputText: {
-    alignSelf: "center"
+    alignSelf: "center",
   },
 
   btn: {
     width: "80%",
     alignSelf: "center",
+    marginTop: "auto",
     margin: 10,
     padding: 5,
     borderRadius: 4,
