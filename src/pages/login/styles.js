@@ -1,55 +1,53 @@
-import { StyleSheet } from "react-native"
-//import EStyleSheet from 'react-native-extended-stylesheet';
+// eslint-disable-next-line prettier/prettier
+import styled from 'styled-components/native';
+import { RectButton } from "react-native-gesture-handler";
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#FF5733",
-  },
+export const Container = styled.View`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+`;
 
-  formCont: {
-    width: "60%",
-    minHeight: "30%",
-    backgroundColor: "#ffff",
-    borderRadius: 10,
-    flexDirection: "column",
-    marginBottom: "20%",
-    padding: 10,
-  },
+export const FormCont = styled.View`
+  width: 60%;
+  min-height: 30%;
+  background: #7159c1;
+  border-radius: 8px;
+  flex-direction: column;
+  margin-bottom: 20%;
+  padding: 10px;
+  box-shadow: 10px 5px 5px red;
+`;
 
-  formInput: {
-    height: 30,
-    backgroundColor: "#dddd",
-    margin: 10,
-    marginBottom: 3,
-    marginTop: 20,
-    borderRadius: 12,
-    color: "#000",
-    padding: 0,
-    paddingHorizontal: 10,
-    //nao consegui por box shadow
-  },
+export const FormInput = styled.TextInput`
+  height: 30px;
+  background: #dddd;
+  margin: 10px;
+  margin-bottom: 3px;
+  margin-top: 20px;
+  border-radius: 12px;
+  color: #000;
+  padding: 0;
+  /* padding-horizontal: 10; */
+`;
 
-  inputText: {
-    alignSelf: "center",
-  },
+export const InputText = styled.Text`
+  align-self: center;
+`;
 
-  btn: {
-    width: "80%",
-    alignSelf: "center",
-    marginTop: "auto",
-    margin: 10,
-    padding: 5,
-    borderRadius: 4,
-    backgroundColor: "#1569c1",
-  },
+export const Btn = styled(RectButton)`
+  width: 80%;
+  align-self: center;
+  margin: 10px;
+  margin-top: auto;
+  padding: 10px;
+  border-radius: 4px;
+  background: #1569c1;
+  box-shadow: 10px 5px 5px red;
+`;
 
-  btnText: {
-    textAlign: "center",
-    color: "#fff",
-  },
-})
-
-export default styles;
+export const BtnText = styled.Text`
+  text-align: center;
+  color: #fff;
+`;
