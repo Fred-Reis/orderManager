@@ -15,14 +15,14 @@ import {
   FormInput,
   InputText,
   Btn,
-  BtnText,
+  BtnText
 } from "./styles";
 
 export default class Login extends Component {
   render() {
     return (
       <Fragment>
-        {/* <StatusBar barStyle="grey-content" StatusBarAnimation="slide" /> */}
+        <StatusBar barStyle="grey-content" StatusBarAnimation="slide" />
         <Container>
           <FormCont>
             <FormInput
